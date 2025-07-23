@@ -21,7 +21,7 @@ const App = ()=>{
   // addnew job function
   const addJob = async (newJob) => {
     try {
-      const response = await fetch('https://back-end-jobs-api-main-3cw2mc.laravel.cloud/api/jobs', {
+      const response = await fetch('https://backend-jobs-main-d8y5e0.laravel.cloud/api/jobs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

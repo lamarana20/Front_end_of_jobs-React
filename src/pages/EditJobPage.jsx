@@ -19,7 +19,7 @@ const EditJobPage = () => {
     useEffect(() => {
         const fetchJob = async () => {
           try {
-            const response = await fetch(`https://back-end-jobs-api-main-3cw2mc.laravel.cloud/api/jobs/${id}`);
+            const response = await fetch(`https://backend-jobs-main-d8y5e0.laravel.cloud/api/jobs/${id}`);
             const data = await response.json();
       
             setTitle(data.title);
@@ -57,7 +57,7 @@ const EditJobPage = () => {
         };
       
         try {
-          const response = await fetch(`https://back-end-jobs-api-main-3cw2mc.laravel.cloud/api/jobs/${id}`, {
+          const response = await fetch(`https://backend-jobs-main-d8y5e0.laravel.cloud/api/jobs/${id}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
